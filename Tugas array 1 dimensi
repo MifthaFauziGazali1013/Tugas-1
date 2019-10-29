@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int garam[5];
+int hasil=0;
+for(int i=0; i<5; i++)
+{
+cout << "input karung ke-"<<(i+1)<<":";
+cin>> garam[i];
+}
+cout<<"nilai garam yang anda masukkan..."<<endl;
+for(int i=0; i<5; i++)
+{
+hasil+=garam[i];
+cout<<"\nkarung ke-"<<(i+1)<<"adalah"<<garam[i]<<"kilogram";
+}
+cout<<"\nTotal garam setiap karung..."<<endl<<endl;
+cout<<hasil<<"kilogram";
+return 0;
+}
